@@ -1,3 +1,5 @@
+@import '../globals.scss';
+
 .welcomePageCont {
     height: 100svh;
     width: 100%;
@@ -9,5 +11,27 @@
     h1 {
         text-align: center;
         font-weight: 300;
+        position: relative;
+    
+        &::after {
+            content: '';
+            width: 0%;
+            height: 0.1rem;
+            background-color: $textPrimary;
+            position: absolute;
+            left: 0;
+            top: 3rem;
+            animation: 0.7s underlineFadeIn 1s forwards ease;
+        }
+    }
+}
+
+@keyframes underlineFadeIn {
+    from {
+        width: 0%;
+        opacity: 0;
+    } to {
+        width: 100%;
+        opacity: 1;
     }
 }
