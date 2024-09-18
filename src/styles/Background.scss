@@ -1,18 +1,13 @@
-:root {
-  --vh: 100%;
-}
-
 .bgCont {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url('/images/mainBg.jpg');
+    background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  ),
+  url('/images/mainBg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  height: calc(var(--vh, 1vh) * 100); /* Use custom vh variable */
+  height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
