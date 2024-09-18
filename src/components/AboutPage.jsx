@@ -3,7 +3,7 @@ import '../styles/AboutPage.scss'
 
 function AboutPage() {
   return (
-    <div className='aboutPageCont'>
+    <div className='aboutPageCont' id='about'>
 
     </div>
   )
