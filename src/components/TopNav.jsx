@@ -34,10 +34,10 @@ function TopNav() {
                 setBgColor('rgba(0, 0, 0, 0.0)');
             } else if (currentScrollTop > lastScrollTop.current + tolerance) {
                 setTransformStyle('translateY(-100%)');
-                setBgColor('rgba(0, 0, 0, 0.4)');
+                setBgColor('rgba(0, 0, 0, 0.2)');
             } else if (currentScrollTop < lastScrollTop.current - tolerance) {
                 setTransformStyle('translateY(0)');
-                setBgColor('rgba(0, 0, 0, 0.4)');
+                setBgColor('rgba(0, 0, 0, 0.2)');
             }
 
             lastScrollTop.current = currentScrollTop <= 0 ? 0 : currentScrollTop;
