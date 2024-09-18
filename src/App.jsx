@@ -1,12 +1,14 @@
 import './App.scss'
 import AboutPage from './components/AboutPage'
 import Background from './components/Background'
+import TopNav from './components/TopNav'
 import WelcomePage from './components/WelcomePage'
 
 function App() {
 
   return (
     <div className='appCont'>
+      <TopNav />
       <Background />
       <WelcomePage />
       <AboutPage />
