@@ -16,7 +16,7 @@ function AboutPage() {
 From sleek, high-impact websites to words that sell with punchy copywriting, we make your crypto one of a kind. 
 
 Supercharge your social with X services that rocket your follower count, likes, and verifications. Dominate Telegram with raid bots, custom channels, and more.</p>
-        <h2>Need jaw-dropping visuals?</h2>
+        <h2>need jaw-dropping visuals?</h2>
         <p>We’ve got you covered with stunning 2D/3D stickers, animated logos, memes, and spinning coins. Whether it’s killer video ads, viral marketing campaigns, or exclusive NFT art, NOA crafts experiences that grab attention—and never let go.</p>
         </div>
       </div>
