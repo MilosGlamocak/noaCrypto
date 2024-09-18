@@ -5,10 +5,11 @@ import NavWindowMobile from './NavWindowMobile';
 
 function TopNav() {
     const [open, setOpen] = useState(false);
-    const [topStyle, setTopStyle] = useState('0rem');
+    const [transformStyle, setTransformStyle] = useState('translateY(0)');
+    const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.0)');
     const navRef = useRef(null);
     const lastScrollTop = useRef(0);
-    const tolerance = 1; // Tolerance threshold in pixels
+    const tolerance = 5; // Tolerance threshold in pixels
     const viewThreshold = window.innerHeight * 0.3; // 30vh in pixels
 
     const handleOpen = () => {
@@ -29,29 +30,33 @@ function TopNav() {
             const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
             if (currentScrollTop <= viewThreshold) {
-                // Always visible if within the first 30vh
-                setTopStyle('0rem');
+                setTransformStyle('translateY(0)');
+                setBgColor('rgba(0, 0, 0, 0.0)');
             } else if (currentScrollTop > lastScrollTop.current + tolerance) {
-                // Scrolling down
-                setTopStyle('-10rem');
+                setTransformStyle('translateY(-100%)');
+                setBgColor('rgba(0, 0, 0, 0.4)');
             } else if (currentScrollTop < lastScrollTop.current - tolerance) {
-                // Scrolling up
-                setTopStyle('0rem');
+                setTransformStyle('translateY(0)');
+                setBgColor('rgba(0, 0, 0, 0.4)');
             }
 
             lastScrollTop.current = currentScrollTop <= 0 ? 0 : currentScrollTop;
         };
 
-        window.addEventListener('scroll', handleScroll);
+        // Use requestAnimationFrame for smoother updates
+        const handleScrollRAF = () => {
+            requestAnimationFrame(handleScroll);
+        };
+        window.addEventListener('scroll', handleScrollRAF);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScrollRAF);
         };
     }, []);
 
     return (
         <>
-            <div className='topNavCont' ref={navRef} style={{ top: topStyle }}>
+            <div className='topNavCont' ref={navRef} style={{ transform: transformStyle, backgroundColor: bgColor }}>
                 <div className='logoCont'>
                     <img src='/images/noa/NOA3.svg' alt='logoSmall' className='topNavLogo' />
                 </div>
