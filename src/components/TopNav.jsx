@@ -5,23 +5,23 @@ import NavWindowMobile from './NavWindowMobile';
 
 
 function TopNav() {
-
     let [open, setOpen] = useState(false);
     const navRef = useRef(null);
 
     const handleOpen = () => {
-        if (open === true) {
+        if (open) {
             navRef.current.style.animation = '0.2s closeNav forwards ease';
             setTimeout(() => {
-                
-                setOpen(!open)
-            }, 300)
+                setOpen(!open);
+                document.body.style.overflow = ''; // Restore scrolling
+            }, 200);
+        } else {
+            setOpen(!open);
+            document.body.style.overflow = 'hidden'; // Disable scrolling
         }
-        else {
-            setOpen(!open)
-        } 
-    }
-
+    };
+    
+    
     return (
         <>
         <div className='topNavCont'>
