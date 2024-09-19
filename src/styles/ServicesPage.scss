@@ -1,0 +1,37 @@
+.servicesPageCont {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    padding-block: 5rem;
+    width: 100vw;
+    text-align: center;
+    gap: 3rem;
+
+    h2 {
+        font-weight: 300;
+    }
+
+    .servicesPageDiv {
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none; /* for Chrome, Safari, and Opera */
+          }
+    }
+
+    .servicesCont {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: row;
+        height: 40vh;
+        gap: 1rem;
+        width: fit-content;
+        padding-inline: 2rem;
+        
+    }
+}

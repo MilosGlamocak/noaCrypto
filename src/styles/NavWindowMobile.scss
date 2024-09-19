@@ -1,0 +1,51 @@
+@import '../globals.scss';
+
+.navWindowCont {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #070a0ec5;
+    backdrop-filter: blur(40px);
+    z-index: 995;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 0;
+    animation: 0.2s openNav forwards ease;
+
+    a {
+        text-decoration: none;
+        color: $textPrimary;
+        font-size: 1.5rem;
+    }
+
+    .closeIcon {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@keyframes openNav {
+    from {
+        transform: translate(30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0%);
+    }
+}
+
+@keyframes closeNav {
+    from {
+        opacity: 1;
+        transform: translate(0%);
+    }
+    to {
+        transform: translate(100%);
+    }
+}

@@ -1,13 +1,16 @@
 .topNavCont {
+    will-change: transform, backdrop-filter; /* Optimize for transform and blur */
     position: fixed;
     width: 100%;
     height: 6rem;
-    border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
+    transition-duration: 0.3s;
+    backdrop-filter: blur(8px);
+    z-index: 994;
 
     .logoCont {
         height: 100%;
