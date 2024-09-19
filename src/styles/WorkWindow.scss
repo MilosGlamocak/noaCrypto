@@ -32,8 +32,6 @@
             height: 1rem !important;
         }
     }
-    
-    
 
     &:hover {
         scale: 1.05;
@@ -52,5 +50,18 @@
             object-fit: cover;
             aspect-ratio: 16/9;
         }
+    }
+
+    &.animate {
+        animation:0.7s load forwards ease; // Trigger the animation when element enters viewport
+    }
+}
+
+@keyframes load {
+    from {
+        transform: translateY(30%);
+    }
+    to {
+        transform: translateY(0);
     }
 }

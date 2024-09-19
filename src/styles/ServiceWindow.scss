@@ -34,4 +34,17 @@
             color: $textSecondary;
         }
     }
+    
+    &.animate {
+        animation: 0.7s load forwards ease; // Trigger the animation when element enters viewport
+    }
+}
+
+@keyframes load {
+    from {
+        transform: translateY(30%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }

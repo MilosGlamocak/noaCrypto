@@ -3,11 +3,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: fit-content;
+    height: 100%;
     padding-block: 5rem;
     width: 100vw;
     text-align: center;
     gap: 3rem;
+    overflow: hidden !important;
+    pointer-events: none;
 
     h2 {
         font-weight: 300;
