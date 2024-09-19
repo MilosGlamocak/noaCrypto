@@ -34,7 +34,7 @@ function ServicesPage() {
   ]
 
   return (
-    <div className='servicesPageCont'>
+    <div className='servicesPageCont' id='services'>
         <h2>what do we offer?</h2>
         <div className='servicesPageDiv'>
             <div className='servicesCont'>
