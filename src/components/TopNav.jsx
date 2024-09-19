@@ -10,7 +10,7 @@ function TopNav() {
     const navRef = useRef(null);
     const lastScrollTop = useRef(0);
     const tolerance = 5; // Tolerance threshold in pixels
-    const viewThreshold = window.innerHeight * 0.3; // 30vh in pixels
+    const viewThreshold = window.innerHeight * 0.15; // 30vh in pixels
 
     const handleOpen = () => {
         if (open) {

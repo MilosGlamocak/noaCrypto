@@ -21,7 +21,7 @@
         text-align: start;
         font-weight: 300;
         position: relative;
-        font-size: 1rem;
+        font-size: 1.1rem;
     
         /*&::after {
             content: '';
@@ -36,14 +36,26 @@
     }
 
     .bookBtn {
+        margin-top: -0.3rem;
         width: fit-content;
         background-color: rgba(217, 217, 217, 0.04);
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 1rem;
-        color: #FFDC7D;
+        color: $textBtnPrimary;
+        font-family: $font3;
+        font-style: italic;
         border-radius: 10px;
+        cursor: pointer;
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        &:hover {
+            background-color: rgba(217, 217, 217, 0.07);
+        }
     }
 }
 
