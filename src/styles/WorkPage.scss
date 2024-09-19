@@ -13,25 +13,12 @@
         font-weight: 300;
     }
 
-    .horizontalScroll {
-        width: 100vw;
-        -ms-overflow-style: none; /* for Internet Explorer, Edge */
-        scrollbar-width: none; /* for Firefox */
-        overflow-x: scroll;
-
-        &::-webkit-scrollbar {
-            display: none; /* for Chrome, Safari, and Opera */
-          }
-    }
-
     .workDiv {
         display: flex;
         align-items: center;
-        justify-content: left;
-        flex-direction: row;
-        height: 40vh;
+        justify-content: center;
+        width: 90%;
         gap: 1rem;
-        width: fit-content;
-        padding-inline: 2rem;
+        flex-wrap: wrap;
     }
 }

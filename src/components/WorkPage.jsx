@@ -16,14 +16,11 @@ function WorkPage() {
   return (
     <div className='workPageCont' id='work'>
         <h2>check out some of our products</h2>
-        <div className='horizontalScroll'>
             <div className='workDiv'>
                 {work.map((s) => {
                   return <WorkWindow header={s.name} img={s.img} url={s.url} key={s.name}/>
                 })}
-            </div> 
-        </div>
-             
+            </div>            
     </div>
   )
 }

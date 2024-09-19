@@ -3,19 +3,40 @@
 .workWindowCont {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
-    height: 16rem;
-    width: 20rem;
-    background-color: rgba(255, 255, 255, 0.04);
+    height: 5rem;
+    width: 10rem;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 2rem;
-    padding: 1.5rem 0 0 0;
     overflow: hidden;
     transition-duration: 0.3s;
+    color: $textTertiary;
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        h3 {
+            font-weight: 400;
+            text-wrap: nowrap;
+        }
+
+        .urlIcon {
+            width: 1rem !important;
+            height: 1rem !important;
+        }
+    }
+    
+    
 
     &:hover {
-        scale: 1.03;
+        scale: 1.05;
         background-color: rgba(255, 255, 255, 0.1);
     }
 
