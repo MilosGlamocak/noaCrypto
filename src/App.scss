@@ -1,3 +1,7 @@
 .appCont {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    padding-bottom: 15rem;
     overflow-x: hidden;
 }

@@ -1,19 +1,29 @@
 @import '../globals.scss';
 
 .welcomePageCont {
-    height: 100svh;
+    position: relative;
+    height: 80svh;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     flex-direction: column;
+    padding-top: 10rem;
+    padding-inline: 2rem;
+    gap: 1.5rem;
+
+    img {
+        filter: invert(99%) sepia(72%) saturate(74%) hue-rotate(323deg) brightness(113%) contrast(90%);
+        width: 15rem;  
+    }
 
     h1 {
-        text-align: center;
+        text-align: start;
         font-weight: 300;
         position: relative;
+        font-size: 1rem;
     
-        &::after {
+        /*&::after {
             content: '';
             width: 0%;
             height: 0.1rem;
@@ -22,7 +32,18 @@
             left: 0;
             top: 3rem;
             animation: 0.7s underlineFadeIn 1s forwards ease;
-        }
+        }*/
+    }
+
+    .bookBtn {
+        width: fit-content;
+        background-color: rgba(217, 217, 217, 0.04);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        color: #FFDC7D;
+        border-radius: 10px;
     }
 }
 
