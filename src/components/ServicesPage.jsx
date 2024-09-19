@@ -42,8 +42,7 @@ function ServicesPage() {
                   return <ServiceWindow header={s.name} text={s.desc} icon={s.icon} key={s.name}/>
                 })}
             </div>
-        </div>
-        
+        </div>   
     </div>
   )
 }

@@ -16,6 +16,11 @@
   user-select: none;
 }
 
+a {
+  color: $textPrimary;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -4,6 +4,7 @@ import Background from './components/Background'
 import ServicesPage from './components/ServicesPage'
 import TopNav from './components/TopNav'
 import WelcomePage from './components/WelcomePage'
+import WorkPage from './components/WorkPage'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <WelcomePage />
       <AboutPage />
       <ServicesPage />
+      <WorkPage />
     </div>
   )
 }
