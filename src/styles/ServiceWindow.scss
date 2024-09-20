@@ -7,12 +7,13 @@
     flex-direction: column;
     width: 20rem;
     height: 17rem;
-    background-color: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(10px);
+    background-color: rgba(217, 217, 217, 0.1);
+    backdrop-filter: blur(30px);
     border-radius: 2rem;
     padding: 2rem;
     gap: 1rem;
     transform: translateY(15%);
+    color: $textServicesHeader;
 
     .icon {
         width: 3rem;

@@ -10,6 +10,16 @@
     gap: 2rem;
     overflow: hidden !important;
     pointer-events: none;
+    padding-bottom: 5rem;
+
+    .bgGlow1 {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0.8;
+        height: 20%;
+        right: 0;
+    }
 
     h2 {
         font-weight: 300;
@@ -43,5 +53,15 @@
 @media (min-width: 1050px) {
     .servicesPageCont {
         padding-inline: 10rem;
+
+        .bgGlow1 {
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            opacity: 0.8;
+            width: 80%;
+            height: 50%;
+            right: 0;
+        }
     }
 }

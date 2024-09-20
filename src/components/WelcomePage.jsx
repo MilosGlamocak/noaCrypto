@@ -10,6 +10,7 @@ function WelcomePage() {
         <div className='bookBtn'>
           <p>Book us now</p>
         </div>
+        <img src="/images/glow4.png" alt="glow" className='glow1'/>
     </div>
   )
 }

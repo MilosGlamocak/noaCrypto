@@ -12,9 +12,17 @@
     padding-inline: 2rem;
     gap: 1.5rem;
 
-    img {
+    img:nth-of-type(1) {
         filter: invert(99%) sepia(72%) saturate(74%) hue-rotate(323deg) brightness(113%) contrast(90%);
         width: 15rem;  
+    }
+
+    .glow1 {
+        position: absolute;
+        opacity: 1;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
     }
 
     h1 {
@@ -38,24 +46,26 @@
     .bookBtn {
         margin-top: -0.3rem;
         width: fit-content;
-        background-color: rgba(217, 217, 217, 0.04);
+        background-color: rgba(217, 217, 217, 0.1);
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 1rem;
+        padding: 1rem 1rem 0.8rem 1rem;
         color: $textBtnPrimary;
-        font-family: $font3;
-        font-style: italic;
+        /*font-family: $font3;
+        font-style: italic;*/
+        font-weight: 500;
         border-radius: 10px;
         cursor: pointer;
         transition-duration: 0.3s;
+        backdrop-filter: blur(50px);
 
         p {
             font-size: 1.1rem;
         }
 
         &:hover {
-            background-color: rgba(217, 217, 217, 0.07);
+            background-color: rgba(217, 217, 217, 0.2);
         }
     }
 }
@@ -76,9 +86,18 @@
         transform: translate(-50%);
         left: 50%;
 
-        img {
+        img:nth-of-type(1) {
             width: 22rem;
             display: none;
+        }
+
+        .glow1 {
+            position: absolute;
+            opacity: 1;
+            z-index: -1;
+            left: 70%;
+            transform: translate(-50%);
+            bottom: 0;
         }
         
         h1 {

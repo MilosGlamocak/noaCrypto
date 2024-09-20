@@ -20,6 +20,7 @@ Supercharge your social with X services that rocket your follower count, likes, 
         <p>We’ve got you covered with stunning 2D/3D stickers, animated logos, memes, and spinning coins. Whether it’s killer video ads, viral marketing campaigns, or exclusive NFT art, NOA crafts experiences that grab attention—and never let go.</p>
         </div>
       </div>
+      <img src="/images/glow6.png" alt="glow2" className='glow2'/>
     </div>
   )
 }
