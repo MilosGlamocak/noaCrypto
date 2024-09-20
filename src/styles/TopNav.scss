@@ -1,3 +1,5 @@
+@import '../globals.scss';
+
 .topNavCont {
     will-change: transform, backdrop-filter; /* Optimize for transform and blur */
     position: fixed;
@@ -26,10 +28,32 @@
         width: fit-content;
         display: flex;
         align-items: center;
+        gap: 2rem;
 
         .menuIcon {
             width: 2.5rem;
             height: 2.5rem;
+        }
+
+        a {
+            color: $textPrimary;
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .topNavRight {
+        .menuIcon {
+            display: none;
+        }
+
+        a {
+            display: flex !important;
+            transition-duration: 0.3s;
+            &:hover {
+                color: $textBtnPrimary;
+            }
         }
     }
 }

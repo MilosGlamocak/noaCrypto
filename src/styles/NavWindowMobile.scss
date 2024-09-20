@@ -49,3 +49,12 @@
         transform: translate(100%);
     }
 }
+
+@media (min-width: 720px) {
+    .navWindowCont {
+        display: none;
+    }
+    body {
+        overflow-y: auto !important;
+    }
+}

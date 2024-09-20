@@ -62,6 +62,9 @@ function TopNav() {
                 </div>
                 <div className='topNavRight'>
                     <MenuIcon className='menuIcon' onClick={handleOpen} />
+                    <a href="#about">about</a>
+                    <a href="#services">services</a>
+                    <a href="#work">our work</a>
                 </div>
             </div>
             {open && <NavWindowMobile handleOpen={handleOpen} ref={navRef} />}
