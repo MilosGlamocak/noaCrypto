@@ -43,17 +43,23 @@
 }
 
 @media (min-width: 720px) {
-    .topNavRight {
-        .menuIcon {
-            display: none;
-        }
 
-        a {
-            display: flex !important;
-            transition-duration: 0.3s;
-            &:hover {
-                color: $textBtnPrimary;
+    .topNavCont {
+        padding-inline: 10%;
+        .topNavRight {
+            .menuIcon {
+                display: none;
+            }
+    
+            a {
+                font-size: 1.1rem;
+                display: flex !important;
+                transition-duration: 0.3s;
+                &:hover {
+                    color: $textBtnPrimary;
+                }
             }
         }
     }
+    
 }
