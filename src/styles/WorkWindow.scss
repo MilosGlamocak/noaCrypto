@@ -15,7 +15,7 @@
     overflow: hidden;
     transition-duration: 0.3s;
     color: $textTertiary;
-    transform: translateY(30%);
+    transform: translateY(15%);
 
     .text {
         display: flex;
@@ -59,7 +59,7 @@
 
 @keyframes load {
     from {
-        transform: translateY(30%);
+        transform: translateY(15%);
     }
     to {
         transform: translateY(0);

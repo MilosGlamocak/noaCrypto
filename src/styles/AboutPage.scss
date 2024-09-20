@@ -62,3 +62,11 @@
     filter: invert(99%) sepia(72%) saturate(74%) hue-rotate(323deg) brightness(113%) contrast(90%);
     width: 5rem;  
 }
+
+@media (min-width: 1050px) {
+    .aboutPageCont {
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%);      
+    }
+}

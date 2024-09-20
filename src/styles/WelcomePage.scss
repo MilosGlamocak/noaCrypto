@@ -68,3 +68,23 @@
         opacity: 1;
     }
 }
+
+@media (min-width: 720px) {
+    .welcomePageCont {
+        padding-left: 20%;
+
+        img {
+            width: 22rem;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .bookBtn {
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
